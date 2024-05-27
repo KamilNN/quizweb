@@ -1,0 +1,27 @@
+body {
+    background: #262323;
+}
+
+aside {
+    float: left;
+    background: #050505;
+    width: 30%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 10px solid #630903
+}
+
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+}
+
+main {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 70%;
+}

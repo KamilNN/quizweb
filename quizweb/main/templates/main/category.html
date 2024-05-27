@@ -1,0 +1,10 @@
+{% load static %}
+<body>
+<link rel="stylesheet" href="{% static 'main/css/quiz.css' %}">
+<h1>Выберите категорию</h1>
+<ul>
+    {% for category in categories %}
+    <li><a href="{% url 'quiz' category.id %}">{{ category.name }}</a></li>
+    {% endfor %}
+</ul>
+</body>

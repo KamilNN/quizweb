@@ -1,0 +1,17 @@
+body {
+    background: #262323;
+}
+
+p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+form {
+    color: #fff;
+    padding: 3%;
+}
+
+button {
+    margin-top: 20px;
+}

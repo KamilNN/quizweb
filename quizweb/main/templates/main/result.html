@@ -1,0 +1,9 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'main/css/result.css' %}">
+
+<body>
+<h1>Вы получили {{ count }} баллов из {{ total }} возможных!</h1>
+<h3><a href="{% url 'category' %}">Попробовать другой тест</a></h3>
+<h3><a href="{% url 'home' %}">Вернуться на главную</a></h3>
+</body>

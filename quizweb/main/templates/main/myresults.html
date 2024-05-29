@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your results</title>
+    <link rel="stylesheet" href="{% static 'main/css/results.css' %}">
+</head>
+<body>
+{% for result in results %}
+<ul>
+    <h1>Ваш результат:</h1>
+    <h1>{{ result.category }}</h1>
+    <li>Баллы: {{ result.score }}</li>
+
+</ul>
+{% endfor %}
+
+<h3><a href="{% url 'home' %}">Вернуться на главную</a></h3>
+</body>
+</html>

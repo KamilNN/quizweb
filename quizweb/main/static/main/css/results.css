@@ -10,5 +10,11 @@ h1 {
 
 h3 a {
     color: #fff;
+    margin-left: 700px;
+}
+
+ul li {
     text-align: center;
+    color: #fff;
+    display: block;
 }

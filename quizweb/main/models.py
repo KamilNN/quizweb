@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Word(models.Model):
@@ -38,4 +39,17 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class TestResult(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    score = models.IntegerField('Балл')
+
+    class Meta:
+        verbose_name = "Балл"
+        verbose_name_plural = "Баллы"
+
+    def __str__(self):
+        return f"{self.score}"
 
